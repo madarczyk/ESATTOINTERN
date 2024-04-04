@@ -1,0 +1,49 @@
+@import '../../assets/styles/colors.scss'; 
+
+.main{
+    width:100%;
+    min-height:100%;
+    .container{
+        margin-bottom:2rem;
+        max-height:80vh;
+        overflow-y:auto;
+    }
+    .appointmentsHeader{
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        span{
+            width:25%;
+            background-color: $primary;
+            text-align: center;
+            font-size: xx-large;
+            margin-left:1.5px;
+            margin-right: 1.5px;
+        }
+    }
+    .editors {
+        display:flex;
+        width:100%;
+        flex-direction: row;
+        justify-content:center;
+        margin-bottom:1rem;
+        margin-top:1rem;
+        .add,
+        .edit,
+        .delete{
+            width:100%;
+            justify-content: center;
+            display:flex;
+            button{
+                width:45%;
+                min-height:40px;
+                background-color: $button;
+                border-radius:20px;
+                transition: background-color 0.3s;
+                &:hover {
+                    background-color: $secondary;
+                  }
+            }
+        }  
+    }
+}

@@ -1,0 +1,38 @@
+@import '../../assets/styles/colors.scss';
+.editformmain {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    .form {
+      background: $background;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+      display: flex;
+      flex-direction: column;
+      gap: 15px; 
+      align-items: center;
+      .data {
+        padding: 10px;
+        margin: 5px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        outline: none;
+        &:focus {
+          border-color: $button; 
+        }
+      }
+      .submit {
+        cursor: pointer;
+        background-color: $button; 
+        color: white;
+        border: none;
+        padding: 10px;
+        border-radius: 4px;
+        transition: background-color 0.3s;
+        &:hover {
+          background-color: $secondary;
+        }
+      }
+    }
+  }
